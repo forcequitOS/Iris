@@ -29,11 +29,11 @@ Iris supports the following environment variables:
 
 To use Iris, you just make an HTTP JSON POST request containing `prompt` as a string to the server's root (/). That's it. Additionally, you can specify...
 
-`system`, your system prompt
+`system`, your system prompt, obviously a text string
 
-`temperature`, the LLM's temperature
+`temperature`, the LLM's temperature, numerical value
 
-`max_tokens`, the maximum number of tokens that the LLM will use when generating a response
+`max_tokens`, the maximum number of tokens that the LLM will use when generating a response, also a numerical value
 
 And, if for whatever reason you don't like sending requests to /, for Ollama API compatibility, Iris also supports sending POST requests to /api/generate, and accepting a GET request for /api/tags (Although it literally provides nothing useful, there's only one model and there is no model parameter to change the model).
 
