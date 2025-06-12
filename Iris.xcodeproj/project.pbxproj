@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36325BF22DF938EC00031AA4 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 36325BF12DF938EC00031AA4 /* Swifter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		36718C872DF9326F0077D17B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36325BF22DF938EC00031AA4 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = Iris;
 			packageProductDependencies = (
+				36325BF12DF938EC00031AA4 /* Swifter */,
 			);
 			productName = Iris;
 			productReference = 36718C892DF9326F0077D17B /* Iris */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 36718C802DF9326F0077D17B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				36325BF02DF938EC00031AA4 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 36718C8A2DF9326F0077D17B /* Products */;
 			projectDirPath = "";
@@ -287,6 +296,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36325BF02DF938EC00031AA4 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36325BF12DF938EC00031AA4 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36325BF02DF938EC00031AA4 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36718C812DF9326F0077D17B /* Project object */;
 }
